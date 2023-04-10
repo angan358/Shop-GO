@@ -53,7 +53,7 @@
             <!-- right-menu==== -->
             <div class="right-menu">
                 <!-- search icon -->
-                <a href="#">
+                <a href="#" class="search">
                     <i class="fas fa-search"></i>
                 </a>
                 <!-- user -->
@@ -72,6 +72,33 @@
     </nav>
 
     <!-- search bar===================== -->
+    <div class="search-bar">
+        <!-- search-input -->
+        <div class="search-input">
+            <!-- input -->
+            <input type="text" placeholder="Search for Products">
+            <!-- cancel-btn -->
+            <a href="#" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!-- jQuery==== -->
+    <script src="./js/jQuery.js"></script>
+    <!-- script -->
+    <script type="text/javascript">
+        /* For Search Bar*/ 
+        $(document).on('click','.search',function(){
+            $('.search-bar').addClass('search-bar-active')
+        });
+        $(document).on('click','.search-cancel',function(){
+            $('.search-bar').removeClass('search-bar-active')
+        });
+    </script>
     
     
 </body>
